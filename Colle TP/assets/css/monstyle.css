@@ -1,0 +1,186 @@
+/* ======================================================================================================== */
+/* =====================================    la page d'acceuil    ============================================ */
+/* ======================================================================================================== */
+
+/* ----------------------------------- ajouter des padding en navbar -------------------------------------- */
+
+.navbar {
+    padding: 15px 30px;
+}
+
+/* ----------------------------- positionner styler les captions de carousel ------------------------------- */
+
+.carousel-item img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    bottom: 15%;
+    text-align: left;
+    left: 10%;
+    right: 10%;
+}
+
+.carousel-caption h3 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.carousel-caption p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin-bottom: 25px;
+}
+
+
+/* ---------------------------------------- styler footer des pages -------------------------------------- */
+
+.bmw-footer {
+    background-color: #edeeee;
+    color: #000000;
+    padding: 50px 0 15px;
+    margin-top: 40px;
+}
+
+/* footer logo and description */
+
+.footer-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #000000;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+.footer-brand img {
+    width: 40px;
+}
+
+.footer-description {
+    color: #1b1919;
+    line-height: 1.8;
+    max-width: 320px;
+}
+
+/* navigation and services */
+
+.bmw-footer h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: #1b1919;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #0d6efd;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.footer-bottom p {
+    color: #1b1919;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.bmw-footer hr {
+    border-color: #555;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+/* ==================================================================================================== */
+/* ===================================    la page des modeles    ======================================= */
+/* ==================================================================================================== */
+
+.modeles-header {
+    background-color: #f8f9fa;
+}
+
+.modeles-header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.modeles-header p {
+    color: #6c757d;
+    font-size: 1.1rem;
+}
+
+/* --------- images des cards --------- */
+.card-img-top {
+    height: 230px;
+    object-fit: cover;
+}
+
+/* --------- animation des cards --------- */
+.card {
+    border: none;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* ------- Buttons --------- */
+.card .btn {
+    border-radius: 6px;
+}
+
+/* style the noResult message */
+#noResults {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+/* ==================================================================================================== */
+/* ===================================    la page des Offres    ======================================= */
+/* ==================================================================================================== */
+
+/* Images des offres */
+#offres .card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Animation au survol */
+#offres .card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+#offres .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
+}

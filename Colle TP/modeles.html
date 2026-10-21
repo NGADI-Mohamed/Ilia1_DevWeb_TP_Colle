@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Cars, BMW, sport cars">
+    <meta name="description" content="Découvrez les voitures BMW : modèles, performances, design, innovation et voitures de luxe.">
+    <link rel="icon" type="image" href="assets/img/brand.webp">
+    <title>BMW Website</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/monstyle.css">
+</head>
+<body>
+    
+    <!-- -----------------------------------light navbar avec bootstrap -------------------------------------------- -->
+
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html" >
+                <img src="assets/img/brand.webp" alt="Logo" width="30" class="d-inline-block align-text-top">
+                BMW
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="modeles.html">Modèles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nos_offres.html">Nos Offres</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Marque et Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="entretien_services.html">Entretien & Services</a></li>
+                            <li><a class="dropdown-item" href="pieces_accessoires.html">Pièces & Accessoires</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contactez-nous</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- --------------------------------------- les modeles de BMW avec bootstrap cards ------------------------------------------------ -->
+
+    <!-- le titre en haut-->
+    <div class="modeles-header text-center py-5">
+        <div class="container">
+            <h1>Découvrez nos modèles BMW</h1>
+            <p>
+                Trouvez le modèle qui correspond à votre style
+                et à votre plaisir de conduire.
+            </p>
+        </div>
+    </div>
+
+    <!-- catalogue des modèles -->
+    <section class="container py-5">
+
+        <h2 class="text-center mb-4">Notre gamme BMW</h2>
+
+        <!-- ------ Barre de recherche pour filtrer les modeles ------- -->
+        <div class="row mb-5">
+            <div class="col-md-6 mx-auto">
+                <input type="text" id="searchInput" class="form-control"
+                    placeholder="Rechercher un modèle BMW...">
+
+                <p id="noResults" class="text-danger" style="display: none;">
+                    Aucun modèle trouvé.
+                </p>
+            </div>
+        </div>
+        <!-- ----------------- fin de barre de recherche ------------------- -->
+
+        <div class="row g-4">
+
+            <!-- ------ modele 1 ------ -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card car-card h-100 shadow-sm">
+                    <img src="assets/img/bmw_modele_1.jpg" class="card-img-top" alt="BMW Model 1">
+
+                    <div class="card-body">
+                        <span class="badge bg-info mb-2">
+                            Berline
+                        </span>
+                        <h5 class="card-title">BMW Série 3</h5>
+                        <p class="card-text">
+                            Une berline élégante qui allie dynamisme,
+                            confort et technologie.
+                        </p>
+                        <a href="#" class="btn btn-primary">
+                            Découvrir
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ------ modele 2 ------ -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card car-card h-100 shadow-sm">
+                    <img src="assets/img/bmw_modele_2.avif" class="card-img-top" alt="BMW Model 2">
+
+                    <div class="card-body">
+                        <span class="badge bg-primary mb-2">
+                            SUV
+                        </span>
+                        <h5 class="card-title">BMW X5</h5>
+                        <p class="card-text">
+                            Un SUV premium offrant espace,
+                            confort et polyvalence.
+                        </p>
+                        <a href="#" class="btn btn-primary">
+                            Découvrir
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ------ modele 3 ------ -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card car-card h-100 shadow-sm">
+                    <img src="assets/img/bmw_modele_3.avif" class="card-img-top" alt="BMW Model 3">
+
+                    <div class="card-body">
+                        <span class="badge bg-danger mb-2">
+                            Sportive
+                        </span>
+                        <h5 class="card-title">BMW M4</h5>
+                        <p class="card-text">
+                            Une voiture sportive conçue pour
+                            les amateurs de performances.
+                        </p>
+                        <a href="#" class="btn btn-primary">
+                            Découvrir
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ------ modele 4 ------ -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card car-card h-100 shadow-sm">
+                    <img src="assets/img/bmw_modele_4.webp" class="card-img-top" alt="BMW Model 4">
+
+                    <div class="card-body">
+                        <span class="badge bg-success mb-2">
+                            Électrique
+                        </span>
+                        <h5 class="card-title">BMW i4</h5>
+                        <p class="card-text">
+                            Une berline électrique alliant
+                            innovation, confort et élégance.
+                        </p>
+                        <a href="#" class="btn btn-primary">
+                            Découvrir
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ------ modele 5 ------ -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card car-card h-100 shadow-sm">
+                    <img src="assets/img/bmw_modele_5.webp" class="card-img-top" alt="BMW Model 1">
+
+                    <div class="card-body">
+                        <span class="badge bg-info mb-2">
+                            Berline de luxe
+                        </span>
+                        <h5 class="card-title">BMW Série 7</h5>
+                        <p class="card-text">
+                            Une berline haut de gamme offrant un confort exceptionnel, 
+                            un design sophistiqué et des équipements innovants.
+                        </p>
+                        <a href="#" class="btn btn-primary">
+                            Découvrir
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ------ modele 6 ------ -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card car-card h-100 shadow-sm">
+                    <img src="assets/img/bmw_modele_6.avif" class="card-img-top" alt="BMW Model 2">
+
+                    <div class="card-body">
+                        <span class="badge bg-primary mb-2">
+                            SUV compact
+                        </span>
+                        <h5 class="card-title">BMW X1</h5>
+                        <p class="card-text">
+                            Un SUV compact et polyvalent, idéal pour les déplacements 
+                            urbains et les escapades du week-end.
+                        </p>
+                        <a href="#" class="btn btn-primary">
+                            Découvrir
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ------ modele 7 ------ -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card car-card h-100 shadow-sm">
+                    <img src="assets/img/bmw_modele_7.avif" class="card-img-top" alt="BMW Model 3">
+
+                    <div class="card-body">
+                        <span class="badge bg-danger mb-2">
+                            Berline sportive
+                        </span>
+                        <h5 class="card-title">BMW M3</h5>
+                        <p class="card-text">
+                            Une berline haute performance qui associe puissance, 
+                            précision de conduite et polyvalence au quotidien.
+                        </p>
+                        <a href="#" class="btn btn-primary">
+                            Découvrir
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ------ modele 8 ------ -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card car-card h-100 shadow-sm">
+                    <img src="assets/img/bmw_modele_8.jpg" class="card-img-top" alt="BMW Model 4">
+
+                    <div class="card-body">
+                        <span class="badge bg-success mb-2">
+                            SUV électrique
+                        </span>
+                        <h5 class="card-title">BMW iX</h5>
+                        <p class="card-text">
+                            Un SUV électrique premium qui met en avant 
+                            le design contemporain, le confort et l'innovation.
+                        </p>
+                        <a href="#" class="btn btn-primary">
+                            Découvrir
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ------------------------------------------- bmw footer ------------------------------------------------ -->
+
+    <footer class="bmw-footer">
+
+        <div class="container">
+            <div class="row gy-4">
+
+                <!-- -------- logo et text ------- -->
+                <div class="col-md-4">
+                    <a href="index.html" class="footer-brand">
+                        <img src="assets/img/brand.webp" alt="Logo BMW">
+                        BMW
+                    </a>
+
+                    <p class="footer-description">
+                        Découvrez l'univers BMW : design, performance, innovation et plaisir de conduire.
+                    </p>
+                </div>
+
+                <!-- ------ navigation ---------- -->
+                <div class="col-md-4">
+                    <h5>Navigation</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="modeles.html">Nos modèles</a></li>
+                        <li><a href="Offres_Automne.html">Nos offres</a></li>
+                    </ul>
+                </div>
+
+                <!-- ---------- Services --------- -->
+                <div class="col-md-4">
+                    <h5>Marque et services</h5>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="entretien_services.html">
+                                Entretien & Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="pieces_accessoires.html">
+                                Pièces & Accessoires
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:mohamed.ngadi@usmba.ac.ma">
+                                Nous contacter
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <!-- --------- Copyright ---------- -->
+            <div class="footer-bottom">
+                <p>
+                    &copy; 2026 BMW WebSite.
+                    NGADI MOHAMED
+                </p>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/monscript.js"></script>
+</body>
+</html>

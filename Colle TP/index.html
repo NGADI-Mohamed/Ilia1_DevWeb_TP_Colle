@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Cars, BMW, sport cars">
+    <meta name="description" content="Découvrez les voitures BMW : modèles, performances, design, innovation et voitures de luxe.">
+    <link rel="icon" type="image" href="assets/img/brand.webp">
+    <title>BMW Website</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/monstyle.css">
+</head>
+<body>
+
+    <!-- -----------------------------------light navbar avec bootstrap -------------------------------------------- -->
+
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html" >
+                <img src="assets/img/brand.webp" alt="Logo" width="30" class="d-inline-block align-text-top">
+                BMW
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="modeles.html">Modèles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nos_offres.html">Nos Offres</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Marque et Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="entretien_services.html">Entretien & Services</a></li>
+                            <li><a class="dropdown-item" href="pieces_accessoires.html">Pièces & Accessoires</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contactez-nous</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ---------------------------- carousel d'images avec des texts avec bootstrap ---------------------------------- -->
+
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+        
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/img/bmw_carousel_1.webp" alt="bmw car" class="d-block" style="width:100%">
+                <div class="carousel-caption">
+                    <h3>Le plaisir de conduire.</h3>
+                    <p>Découvrez un design emblématique, des performances remarquables et une expérience de conduite unique.</p>
+                    <a href="modeles.html" class="btn btn-primary">
+                        Découvrir nos modèles
+                    </a>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="assets/img/bmw_carousel_2.jpg" alt="bmw car" class="d-block" style="width:100%">
+                <div class="carousel-caption">
+                    <h3>La puissance à l'état pur.</h3>
+                    <p>Vivez des sensations intenses grâce à une ingénierie sportive et des technologies innovantes.</p>
+                    <a href="modeles.html" class="btn btn-primary">
+                        Explorer BMW M
+                    </a>
+                </div> 
+            </div>
+
+            <div class="carousel-item">
+                <img src="assets/img/bmw_carousel_3.webp" alt="bmw car" class="d-block" style="width:100%">
+                <div class="carousel-caption">
+                    <h3>Le futur prend la route.</h3>
+                    <p>Explorez une nouvelle vision de la mobilité, où technologie, confort et élégance se rencontrent.</p>
+                    <a href="modeles.html" class="btn btn-primary">
+                        Découvrir l'innovation
+                    </a>
+                </div>  
+            </div>
+        </div>
+            
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </div>
+
+    <!-- ------------------------------------ section introduction BMW ------------------------------------------- -->
+    
+    <section id="introduction" class="container py-5">
+
+        <div class="row align-items-center g-4">
+
+            <!-- --------- Le text ---------- -->
+            <div class="col-md-7">
+                <h2>Bienvenue dans l'univers BMW</h2>
+
+                <p>
+                    Le plaisir de conduire, une passion depuis toujours.
+                </p>
+
+                <p>
+                    BMW est une marque automobile allemande reconnue pour
+                    son design élégant, ses performances exceptionnelles
+                    et ses technologies innovantes. Chaque modèle est conçu
+                    pour offrir une expérience de conduite unique,
+                    alliant confort, précision et dynamisme.
+                </p>
+
+                <p>
+                    Des berlines élégantes aux SUV polyvalents, en passant
+                    par les modèles sportifs BMW M et les véhicules
+                    électriques, découvrez un univers où l'innovation
+                    rencontre l'excellence.
+                </p>
+
+                <a href="modeles.html" class="btn btn-outline-primary mt-2">
+                    Découvrir nos modèles
+                </a>
+            </div>
+
+            <!-- --------- Image BMW --------- -->
+            <div class="col-md-5">
+                <img src="assets/img/bmw_intro.avif" alt="Voiture BMW" class="img-fluid rounded shadow">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ------------------------------------------- bmw footer ------------------------------------------------ -->
+
+    <footer class="bmw-footer">
+
+        <div class="container">
+            <div class="row gy-4">
+
+                <!-- -------- logo et text ------- -->
+                <div class="col-md-4">
+                    <a href="index.html" class="footer-brand">
+                        <img src="assets/img/brand.webp" alt="Logo BMW">
+                        BMW
+                    </a>
+
+                    <p class="footer-description">
+                        Découvrez l'univers BMW : design, performance, innovation et plaisir de conduire.
+                    </p>
+                </div>
+
+                <!-- ------ navigation ---------- -->
+                <div class="col-md-4">
+                    <h5>Navigation</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="modeles.html">Nos modèles</a></li>
+                        <li><a href="Offres_Automne.html">Nos offres</a></li>
+                    </ul>
+                </div>
+
+                <!-- ---------- Services --------- -->
+                <div class="col-md-4">
+                    <h5>Marque et services</h5>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="entretien_services.html">
+                                Entretien & Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="pieces_accessoires.html">
+                                Pièces & Accessoires
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:mohamed.ngadi@usmba.ac.ma">
+                                Nous contacter
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <!-- --------- Copyright ---------- -->
+            <div class="footer-bottom">
+                <p>
+                    &copy; 2026 BMW WebSite.
+                    NGADI MOHAMED
+                </p>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/monscript.js"></script>
+</body>
+</html>
