@@ -48,6 +48,83 @@
         </div>
     </nav>
 
+    <!-- -------------------------------------- Formulaire ---------------------------------------------- -->
+
+    <section class="container py-5">
+
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+
+                <div class="card shadow border-0">
+                    <div class="card-header bg-dark text-white text-center py-3">
+                        <h3 class="mb-0">Contactez-nous</h3>
+                        <p class="mb-0 mt-2">BMW - Nous sommes à votre écoute</p>
+                    </div>
+
+                    <div class="card-body p-4">
+
+                        <form action="#">
+
+                            <!-- ------ Nom complet ------- -->
+                            <div class="mb-3">
+                                <label for="nom" class="form-label">Nom complet</label>
+                                <input type="text" class="form-control" id="nom" name="nom"
+                                    placeholder="Entrez votre nom" required>
+                            </div>
+
+                            <!-- --------- Email ---------- -->
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Adresse e-mail</label>
+                                <input type="email" class="form-control" id="email" name="email"
+                                    placeholder="exemple@email.com" required>
+                            </div>
+
+                            <!-- --------- Téléphone --------- -->
+                            <div class="mb-3">
+                                <label for="telephone" class="form-label">Téléphone</label>
+                                <input type="tel" class="form-control" id="telephone" name="telephone"
+                                    placeholder="Votre numéro de téléphone">
+                            </div>
+
+                            <!-- -------- Sujet --------- -->
+                            <div class="mb-3">
+                                <label for="sujet" class="form-label">Sujet</label>
+                                <select class="form-select" id="sujet" name="sujet" required>
+                                    <option value="" selected disabled>
+                                        Choisissez un sujet
+                                    </option>
+                                    <option value="modeles">Informations sur les modèles</option>
+                                    <option value="offres">Nos offres et tarifs</option>
+                                    <option value="entretien">Entretien et services</option>
+                                    <option value="pieces">Pièces et accessoires</option>
+                                    <option value="autre">Autre demande</option>
+                                </select>
+                            </div>
+
+                            <!-- -------- Message -------- -->
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Votre message</label>
+                                <textarea class="form-control" id="message" name="message" rows="5"
+                                        placeholder="Écrivez votre message ici..."></textarea>
+                            </div>
+
+                            <!-- --------- Bouton ---------- -->
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary btn-lg">
+                                    Envoyer le message
+                                </button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
     
     <!-- ------------------------------------------- bmw footer ------------------------------------------------ -->
 
@@ -74,7 +151,7 @@
                     <ul class="footer-links">
                         <li><a href="index.html">Accueil</a></li>
                         <li><a href="modeles.html">Nos modèles</a></li>
-                        <li><a href="Offres_Automne.html">Nos offres</a></li>
+                        <li><a href="nos_offres.html">Nos offres</a></li>
                     </ul>
                 </div>
 
@@ -93,7 +170,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="mailto:mohamed.ngadi@usmba.ac.ma">
+                            <a href="contact.html">
                                 Nous contacter
                             </a>
                         </li>
